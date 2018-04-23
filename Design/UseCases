@@ -1,0 +1,49 @@
+Secret Santa
+
+USE CASE DESCRIPTION
+
+1. An administrator creates a Secret Santa game and invites other players (family, friends, colleagues, etc) to
+   participate.
+2. Players create logins and themselves to the game and making choices aligned to the game parameters.
+3. Once the admin (who may or may not be a player in this game) is satisfied that all players have completed
+   registration, the game is run and players are given the name and choices of their "buy-for" player.
+
+Triggers
+
+1. An administrator creates a game
+2. Players register for the game
+3. The administrator runs the game
+4. Players acknowledge they have bought their gifts
+
+Actors
+
+1. Administrator
+2. Players
+3. A Game
+
+Preconditions
+
+1. An administrator creates a game
+2. At least three players register for the game
+
+Goals
+1. To create a game with a chosen number of choices and budget
+2. To allow people to join as players and register for one or more games
+2. To secretly allocate each player with one person to buy-for, avoiding "don't buy for" players
+
+Not Available
+1. Fix program and try again
+
+Steps of Execution
+1. Players create system logins, providing name, nickname, email address and password.
+2. One player creates a game with a name, description, number of choices and budget, becoming the default admin for
+   that game.
+3. The administrator invites other players to participate, either off-platform or using an email facility (phase 2).
+4. Players register for the games, providing names, descriptions, guide prices and sources of each item, up to
+   the number of choices set for each game. Players also provide a "don't buy for" player (eg spouse) for each game.
+
+5. The admin checks registration progress by accessing a report of registered players and level of registration.
+6. Once the admin (who may also be a player) is satisfied that all players have registered and completed their
+   details, the game is run and players are given the name and choices of their "buy-for" player.
+7. Players buy items and mark their game entry as complete.
+
