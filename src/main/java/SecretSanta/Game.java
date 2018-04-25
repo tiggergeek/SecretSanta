@@ -11,7 +11,7 @@ class Game {
     int numChoices;
     int budget;
     int gameOwner;
-    Arraylist<int> players;
+    ArrayList<Integer> players;
 
     Game(String gameName) {
         this.gameName = gameName;
