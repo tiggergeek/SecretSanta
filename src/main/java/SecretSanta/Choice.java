@@ -13,7 +13,6 @@ public class Choice {
     private String itemDesc;
     private int itemPrice;
     private String itemSource;
-
     private int gameId;
 
     public int getGameId() {
