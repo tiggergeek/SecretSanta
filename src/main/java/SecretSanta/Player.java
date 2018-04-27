@@ -5,6 +5,19 @@ import java.util.Random;
 
 public class Player {
 
+    Player(String playerName) {
+        this.playerId = SecretSanta.createID(10000, 100000);
+        this.playerName = playerName;
+    }
+
+    private String playerName;
+    private String nickName;
+    private int playerId;
+    private String password;
+    private ArrayList<Integer> gamesOwned;
+    private ArrayList<Integer> gamesPlaying;
+
+
     public String getPlayerName() {
         return playerName;
     }
@@ -52,20 +65,6 @@ public class Player {
     public void setGamesPlaying(ArrayList<Integer> gamesPlaying) {
         this.gamesPlaying = gamesPlaying;
     }
-
-    private String playerName;
-    private String nickName;
-    private int playerId;
-    private String password;
-    private ArrayList<Integer> gamesOwned;
-    private ArrayList<Integer> gamesPlaying;
-
-    Player(String playerName) {
-        this.playerId = GameHelper.createID(10000, 100000);
-        this.playerName = playerName;
-    }
-
-
 
 
 }

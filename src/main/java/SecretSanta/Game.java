@@ -1,9 +1,8 @@
 package SecretSanta;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
-class Game {
+public class Game {
 
     int gameID;
     String gameName;
@@ -15,8 +14,67 @@ class Game {
 
     Game(String gameName) {
         this.gameName = gameName;
-        this.gameID = GameHelper.createID(20000, 30000);
+        this.gameID = SecretSanta.createID(20000, 30000);
     }
+
+    public int getGameID() {
+        return gameID;
+    }
+
+    public void setGameID(int gameID) {
+        this.gameID = gameID;
+    }
+
+    public String getGameName() {
+        return gameName;
+    }
+
+    public void setGameName(String gameName) {
+        this.gameName = gameName;
+    }
+
+    public String getGameDesc() {
+        return gameDesc;
+    }
+
+    public void setGameDesc(String gameDesc) {
+        this.gameDesc = gameDesc;
+    }
+
+    public int getNumChoices() {
+        return numChoices;
+    }
+
+    public void setNumChoices(int numChoices) {
+        this.numChoices = numChoices;
+    }
+
+    public int getBudget() {
+        return budget;
+    }
+
+    public void setBudget(int budget) {
+        this.budget = budget;
+    }
+
+    public int getGameOwner() {
+        return gameOwner;
+    }
+
+    public void setGameOwner(int gameOwner) {
+        this.gameOwner = gameOwner;
+    }
+
+    public ArrayList<Integer> getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(ArrayList<Integer> players) {
+        this.players = players;
+    }
+
+
+
 
 
 //    ArrayList<Person> players = new ArrayList<Person>();
