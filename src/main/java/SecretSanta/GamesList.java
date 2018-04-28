@@ -1,3 +1,5 @@
+package SecretSanta;
+
 import java.util.ArrayList;
 import SecretSanta.Game;
 
